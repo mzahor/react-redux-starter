@@ -148,6 +148,10 @@ module.exports = function webpackConfig(env = {}) {
     target: isSSR ? 'node' : 'web',
 
     devtool: isProd ? false : 'cheap-module-eval-source-map',
+
+    devServer: {
+      historyApiFallback: true,
+    },
   };
 
   return config;
