@@ -9,9 +9,7 @@ export default function configureStore(preloadedState) {
   const store = createStore(
     auth,
     preloadedState,
-    composeEnhancers(
-      applyMiddleware(thunk, createLogger()),
-    )
+    composeEnhancers(applyMiddleware(thunk, createLogger())),
   );
 
   return store;

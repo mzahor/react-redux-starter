@@ -46,6 +46,9 @@
       "error",
       2
     ],
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "import/prefer-default-export": "off",
+    "global-require": "off",
+    "no-shadow": "off"
   }
 }

@@ -6,9 +6,7 @@ export default function configureStore(preloadedState) {
   const store = createStore(
     auth,
     preloadedState,
-    compose(
-      applyMiddleware(thunk),
-    )
+    compose(applyMiddleware(thunk)),
   );
 
   return store;
