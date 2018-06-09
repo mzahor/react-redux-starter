@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "lint": "eslint ./src",
-    "build": "webpack --env=production"
+    "build": "webpack --env.NODE_ENV=production",
+    "analyze": "webpack --env.NODE_ENV=production --env.analyze=true"
   },
   "keywords": [],
   "author": "",

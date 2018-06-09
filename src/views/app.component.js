@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from './auth/login.component';
 
@@ -11,9 +11,9 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <Fragment>
           <Route path="/" component={Login} />
-        </div>
+        </Fragment>
       </Router>
     );
   }

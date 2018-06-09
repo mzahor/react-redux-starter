@@ -117,10 +117,6 @@ module.exports = function webpackConfig(env = {}) {
           filename: '[name].bundle.css',
           disable: isLocal,
         }),
-        new webpack.ProvidePlugin({
-          Promise: 'promise-polyfill',
-          fetch: 'unfetch',
-        }),
         new HtmlWebpackPlugin({
           inject: false,
           template: './index.ejs',
