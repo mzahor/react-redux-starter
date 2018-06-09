@@ -1,0 +1,14 @@
+{
+  "sourceMaps": true,
+  "presets": [
+    [
+      "airbnb",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-class-properties"
+  ]
+}
