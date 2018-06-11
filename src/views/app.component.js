@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Login from './auth/login.component';
+import LoginPage from './auth/login-page/login-page.component';
 
 export default class App extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ export default class App extends Component {
     return (
       <Router>
         <Fragment>
-          <Route path="/" component={Login} />
+          <Route path="/" component={LoginPage} />
         </Fragment>
       </Router>
     );

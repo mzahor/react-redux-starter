@@ -49,6 +49,8 @@
     "object-curly-newline": "off",
     "import/prefer-default-export": "off",
     "global-require": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "import/no-named-as-default": "off",
+    "arrow-parens": "off"
   }
 }
