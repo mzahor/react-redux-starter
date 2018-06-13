@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input, Row } from 'reactstrap';
+import GoogleLogin from 'react-google-login';
 import { setValue } from '../../../utils/react-utils';
 
 export default class LoginForm extends Component {
@@ -9,11 +10,16 @@ export default class LoginForm extends Component {
     this.emailChange = setValue.bind(this, 'email');
     this.passwordChange = setValue.bind(this, 'password');
     this.onLogin = this.onLogin.bind(this);
+    this.onGoogleResponse = this.onGoogleResponse.bind(this);
   }
 
   onLogin() {
     const { email, password } = this.state;
     this.props.onLogin({ email, password });
+  }
+
+  onGoogleResponse(...args) {
+    console.log(args);
   }
 
   render() {
@@ -32,6 +38,14 @@ export default class LoginForm extends Component {
           </Col>
         </FormGroup>
         <Button color="danger" onClick={this.onLogin}>Login</Button>
+        <Row>
+          <GoogleLogin
+            clientId="614557513609-8g3de6inop93kghohugsrrthnfmuh537.apps.googleusercontent.com"
+            buttonText="Login with Google"
+            onSuccess={this.onGoogleResponse}
+            onFailure={this.onGoogleResponse}
+          />
+        </Row>
       </Form>
     );
   }

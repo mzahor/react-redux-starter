@@ -51,6 +51,8 @@
     "global-require": "off",
     "no-shadow": "off",
     "import/no-named-as-default": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "class-methods-use-this": "off",
+    "no-console": "off"
   }
 }

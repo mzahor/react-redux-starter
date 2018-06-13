@@ -148,6 +148,7 @@ module.exports = function webpackConfig(env = {}) {
 
     devServer: {
       historyApiFallback: true,
+      port: 3000,
     },
   };
 
