@@ -31,6 +31,7 @@ module.exports = function webpackConfig(env = {}) {
 
   const compilationPaths = [
     path.resolve(__dirname, 'src'),
+    path.resolve(__dirname, 'node_modules/bootstrap'),
   ];
 
   const config = {
